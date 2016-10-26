@@ -1,5 +1,9 @@
 ![capture](https://cloud.githubusercontent.com/assets/15001254/19718999/d3c39948-9b1c-11e6-9241-b902892ee48e.JPG)
 
+#PROJECT NAME: _BotMan_
+
+##ABSTRACT
+
 •	Introduction: Develop  a framework to help users create Bots for Slack integration
 
 In this project, we will be building a custom framework, which will help users build their own custom bots and deploy in production. Slack Bots are useful to perform important mundane tasks that a team can find useful.
@@ -24,5 +28,7 @@ We are thinking of using Python, node.JS, JavaScript, Slack API, Botkit, Git
 •	Need and Advantages
 
 This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use slack and make a bot.
+
+##ARCHITECTURAL FLOW DIAGRAM
 
 ![architecture](https://cloud.githubusercontent.com/assets/17586634/19717520/d1afab12-9b15-11e6-8fdf-8a433c499bba.PNG)
