@@ -32,3 +32,10 @@ This is a custom framework which will help many people who are new or are unawar
 ##ARCHITECTURAL FLOW DIAGRAM
 
 ![architecture](https://cloud.githubusercontent.com/assets/17586634/19717520/d1afab12-9b15-11e6-8fdf-8a433c499bba.PNG)
+
+
+##USER STORIES
+
+As an office work group manager on slack I will need to maintain list of the things that need to be bought for the meeting. So the group of the office can easily maintain the things to be bought with the help of our bot. While discussing on the channel he thinks of something to be bought then instead of writing down in a separate notepad and then saving it somewhere. He can just save the list in the bot which he himself will create through our BotMan. This will reduce the overhead of maintaining mundane tasks for me.
+
+In a project team while discussing the things sometimes someone uses words which are unknown to the others, in that case a project team can have a slack bot created through BotMan which will search those words in a dictionary and return the results to the team member. This way the communication between the team members will be efficient and productive.
