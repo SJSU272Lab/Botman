@@ -1,0 +1,9 @@
+1. heroku cloud is used
+2. Following nodejs modules have been used,
+body-parser
+botkit
+child_process
+ejs
+express
+node-cmd
+request
