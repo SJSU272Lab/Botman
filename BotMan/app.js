@@ -11,6 +11,7 @@ var path		= require('path');
 var home 		= require('./routes/home');
 var cmd 		= require('node-cmd');
 var app 		= express();
+var index		= require('./routes/index');
 
 // all environments
 app.set('port', process.env.PORT || 3001);
