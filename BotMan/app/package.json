@@ -5,12 +5,13 @@
   "scripts": {
     "start": "node app.js"
   },
-  "main": "app.js",
   "dependencies": {
-    "body-parser": "^1.x.x",
+    "body-parser": "^1.15.2",
+    "botkit": "^0.4.1",
     "child_process": "^1.0.2",
-    "express": "^4.x.x",
+    "ejs": "*",
+    "express": "3.2.6",
     "node-cmd": "^1.1.1",
-    "request": "2.56.x"
+    "request": "^2.78.0"
   }
 }
