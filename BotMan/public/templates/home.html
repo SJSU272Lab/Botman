@@ -1,21 +1,20 @@
 
 <div class="container">
-	
+
 	<h2>Required Modules</h2>
-  <form>
-    <div class="form-group">
-      <textarea class="form-control" rows="2" ng-model="modules"></textarea>
-    </div>
-  
+	<form>
+		<div class="form-group">
+			<textarea class="form-control" rows="2" ng-model="modules"></textarea>
+		</div>
 
+		<h2>Editor</h2>
+		<p>Type your code below</p>
 
-  <h2>Editor</h2>
-  <p>Type your code below</p>
-  
-    <div class="form-group">
-      <textarea class="form-control" rows="10" ng-model="code"></textarea><br>
-      <button class="btn btn-primary" ng-click="upload()">Upload</button>	
-    </div>
-  </form>
+		<div id="demo" class="form-group">
+			<textarea id="myTextarea" class="form-control codemirror-textarea" rows="20" ng-model="code"></textarea>
+			<br>
+			<button class="btn btn-primary" ng-click="upload()">Upload</button>
+		</div>
+	</form>
 </div>
 
