@@ -6,7 +6,9 @@
 <!-- The jquery from web CDN -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	
 </script>
+<script src="//ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -15,11 +17,13 @@
 <!-- The angularjs from web CDN -->
 <script
 	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js">
+	
 </script>
 
 <!-- The angularjs UI router from web CDN -->
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js">
+	
 </script>
 
 <!-- The bootstrap from web CDN -->
@@ -29,6 +33,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+	
 </script>
 
 <!-- The css from file directory -->
@@ -36,6 +41,7 @@
 <!-- The codemirror.css file directory -->
 <link rel='stylesheet' href='/stylesheets/codemirror.css' />
 <link rel='stylesheet' href='/stylesheets/docs.css' />
+<link rel='stylesheet' href='/stylesheets/lint.css' />
 
 <!-- Loading the AngularJS file from /public/angularJS folder -->
 <script src="angularjs/home.js"></script>
@@ -44,10 +50,14 @@
 <script src="angularjs/javascript.js"></script>
 <!-- The jquery-min.js from file directory -->
 <script src="angularjs/jquery-min.js"></script>
+<script src="https://codemirror.net/addon/lint/lint.js"></script>
+<script src="https://codemirror.net/addon/lint/javascript-lint.js"></script>
+<script src="https://rawgithub.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
 
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js">
+	
 </script>
 
 </head>
@@ -66,68 +76,14 @@
 
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="#/home">Node</a></li>
-					<li><a href="#/python">Python</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li>
-
+					<li><a href="#/home">EDITOR</a></li>
+					<li><a href="#/upload">UPLOAD FILES</a></li>
 				</ul>
-
-
 			</div>
 		</div>
 	</nav>
 
 	<div ng-view></div>
-
-	<script>
-
-$(document).ready(function(){
-	var code = $(".codemirror-textarea")[0];
-	var editor  = CodeMirror.fromTextArea(code, {
-		lineNumbers	: true,
-		mode:  "javascript",
-		gutters: ["CodeMirror-lint-markers"],
-		lint: true
-	});
-	
-	var waiting;
-	editor.on("change", function() {
-		    clearTimeout(waiting);
-		    waiting = setTimeout(updateHints, 500);
-		  });
-	
-	var widgets = []
-	function updateHints() {
-	  editor.operation(function(){
-	    for (var i = 0; i < widgets.length; ++i)
-	      editor.removeLineWidget(widgets[i]);
-	    widgets.length = 0;
-
-	    JSHINT(editor.getValue());
-	    for (var i = 0; i < JSHINT.errors.length; ++i) {
-	      var err = JSHINT.errors[i];
-	      if (!err) continue;
-	      var msg = document.createElement("div");
-	      var icon = msg.appendChild(document.createElement("span"));
-	      icon.innerHTML = "!!";
-	      icon.className = "lint-error-icon";
-	      msg.appendChild(document.createTextNode(err.reason));
-	      msg.className = "lint-error";
-	      widgets.push(editor.addLineWidget(err.line - 1, msg, {coverGutter: false, noHScroll: true}));
-	    }
-	  });
-	  var info = editor.getScrollInfo();
-	  var after = editor.charCoords({line: editor.getCursor().line + 1, ch: 0}, "local").top;
-	  if (info.top + info.clientHeight < after)
-	    editor.scrollTo(null, after - info.clientHeight + 3);
-	}
-
-		  setTimeout(updateHints, 100);
-});
-
-
-</script>
 
 </body>
 </html>

@@ -9,10 +9,7 @@ var user		= require('./routes/user');
 var http		= require('http');
 var path		= require('path');
 var home 		= require('./routes/home');
-var index		= require('./routes/index')
 var cmd 		= require('node-cmd');
-
-
 var app 		= express();
 
 // all environments
@@ -31,9 +28,7 @@ if ('development' === app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/',index.loadindex);
-app.get('/home', home.loadhome);
-
+app.get('/', home.loadhome);
 
 app.post('/nodeBot',home.nodeBot);
 http.createServer(app).listen(app.get('port'), function(){

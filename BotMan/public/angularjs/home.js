@@ -1,20 +1,21 @@
 var app = angular.module('home', ['ngRoute']);
+
 app.config(function($routeProvider) {
-	console.log("in route provider");
+	console.log("IN ROUTE PROVIDER");
 	$routeProvider
 	
 	.when("/home", {
 		templateUrl : "templates/home.html",
 		controller : "homecontroller"
 	})
-	.when("/python", {
-		templateUrl : "templates/python.html",
-		controller : "pythoncontroller"
+	.when("/upload", {
+		templateUrl : "templates/upload.html",
 	});
 		
 });
+
 app.controller('homecontroller',function($scope,$http){
-	console.log("inside home controller");
+	console.log("INSIDE HOME CONTROLLER");
 	$scope.upload=function(req,res){
 		console.log($scope.modules);
 		console.log($scope.code);
@@ -29,11 +30,4 @@ app.controller('homecontroller',function($scope,$http){
 			console.log("success");
 		});
 	};
-	
-
-});
-app.controller('pythoncontroller',function($scope,$http){
-	console.log("inside python controller");
-	
-
 });

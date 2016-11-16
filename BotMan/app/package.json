@@ -1,17 +1,1 @@
-{
-  "name": "app",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "botkit": "^0.4.1",
-    "child_process": "^1.0.2",
-    "ejs": "*",
-    "express": "3.2.6",
-    "node-cmd": "^1.1.1",
-    "request": "^2.78.0"
-  }
-}
+undefined

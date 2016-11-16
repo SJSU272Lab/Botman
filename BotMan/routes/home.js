@@ -23,7 +23,7 @@ exports.nodeBot=function(req,res){
 	
 	var modules=req.param("modules");
 	console.log("Required Modules:");
-	//console.log(modules);
+	console.log(modules);
 	
 	fs.writeFile("app/package.json", modules, function(err) {
 	    if(err) {
@@ -34,7 +34,7 @@ exports.nodeBot=function(req,res){
 	
 	var code=req.param("code");
 	console.log("Editor:");
-	//console.log(code);
+	console.log(code);
 	
 	fs.writeFile("app/app.js", code, function(err) {
 	    if(err) {
@@ -44,9 +44,9 @@ exports.nodeBot=function(req,res){
 	}); 
 	
 	
-	child_process.exec('test.bat', function(error, stdout, stderr) {
+/*	child_process.exec('test.bat', function(error, stdout, stderr) {
 		console.log('Deploying to the cloud');
 		console.log(stdout);
-	});
+	});*/
 
 };
