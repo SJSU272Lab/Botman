@@ -10,7 +10,7 @@ app.config(function($routeProvider) {
 	.when("/python", {
 		templateUrl : "templates/python.html",
 		controller : "pythoncontroller"
-	})
+	});
 		
 });
 app.controller('homecontroller',function($scope,$http){
