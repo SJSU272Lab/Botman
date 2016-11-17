@@ -52,7 +52,8 @@
 <script src="angularjs/jquery-min.js"></script>
 <script src="https://codemirror.net/addon/lint/lint.js"></script>
 <script src="https://codemirror.net/addon/lint/javascript-lint.js"></script>
-<script src="https://rawgithub.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
+<script
+	src="https://rawgithub.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
 
 
 <script
@@ -78,6 +79,12 @@
 				<ul class="nav navbar-nav">
 					<li><a href="#/home">EDITOR</a></li>
 					<li><a href="#/upload">UPLOAD FILES</a></li>
+					<li>
+						<form action="logout" method="post">
+							<button name="logout" ng-click="logout()" type="submit"
+								class="btn btn-primary">LOGOUT</button>
+					</li>
+					</form>
 				</ul>
 			</div>
 		</div>
