@@ -5,11 +5,14 @@ app.config(function($routeProvider) {
 	$routeProvider
 	
 	.when("/home", {
-		templateUrl : "templates/home.html",
-		controller : "homecontroller"
+		templateUrl : "templates/home.html"
+		
+		
 	})
 	.when("/upload", {
 		templateUrl : "templates/upload.html",
+		controller : "homecontroller"
+		
 	});
 		
 });
