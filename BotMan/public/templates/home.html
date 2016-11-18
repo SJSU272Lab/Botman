@@ -4,6 +4,7 @@
 	<p>Type your code below</p>
 
 	<textarea id="myTextarea" rows="20" class="codemirror-textarea"></textarea>
+	<button onclick="saveWorkspace()">Save workspace</button>
 </div>
 <style type="text/css">
 .CodeMirror {
@@ -29,6 +30,7 @@
 </style>
 
 <script>
+
 var editor = CodeMirror.fromTextArea(document.getElementById("myTextarea"),
 		{
 			lineNumbers : true,
@@ -36,6 +38,11 @@ var editor = CodeMirror.fromTextArea(document.getElementById("myTextarea"),
 			gutters : [ "CodeMirror-lint-markers" ],
 			lint : true
 		});
+
+editor.getDoc().setValue(sessionStorage.getItem('editorVal'));
+function saveWorkspace() {
+	sessionStorage.setItem('editorVal',editor.getValue());
+}
 </script>
 
 

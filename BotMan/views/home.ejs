@@ -56,11 +56,14 @@
 	src="https://rawgithub.com/zaach/jsonlint/79b553fb65c192add9066da64043458981b3972b/lib/jsonlint.js"></script>
 
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js">
-	
+<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js">
 </script>
 
+<script type="text/javascript">
+      function clearEditor() {
+    	  sessionStorage.removeItem('editorVal');
+      }
+</script>
 </head>
 
 <body ng-app="home">
@@ -81,16 +84,14 @@
 					<li><a href="#/upload">UPLOAD FILES</a></li>
 					<li>
 						<form action="logout" method="post">
-							<button name="logout" ng-click="logout()" type="submit"
+							<button name="logout" onclick="clearEditor()" ng-click="logout()" type="submit"
 								class="btn btn-primary">LOGOUT</button>
+						</form>
 					</li>
-					</form>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
 	<div ng-view></div>
-
 </body>
 </html>
