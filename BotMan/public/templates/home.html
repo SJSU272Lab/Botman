@@ -39,9 +39,9 @@ var editor = CodeMirror.fromTextArea(document.getElementById("myTextarea"),
 			lint : true
 		});
 
-editor.getDoc().setValue(sessionStorage.getItem('editorVal'));
+editor.getDoc().setValue(localStorage.getItem('editorVal'));
 function saveWorkspace() {
-	sessionStorage.setItem('editorVal',editor.getValue());
+	localStorage.setItem('editorVal',editor.getValue());
 }
 </script>
 
