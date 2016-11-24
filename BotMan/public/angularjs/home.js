@@ -6,11 +6,16 @@ app.config(function($routeProvider) {
 
 	.when("/home", {
 		templateUrl : "templates/home.html"
-
-	}).when("/upload", {
+	})
+	
+	.when("/steps", {
+		templateUrl : "templates/steps.html",
+		controller : "stepsController"
+	})
+	
+	.when("/upload", {
 		templateUrl : "templates/upload.html",
 		controller : "homecontroller"
-
 	});
 
 });
@@ -29,6 +34,22 @@ app.controller('homecontroller', function($scope, $http) {
 			}
 		}).success(function(data) {
 			console.log("success");
+		});
+	};
+});
+
+
+app.controller('stepsController', function($scope, $http) {
+	
+	console.log("INSIDE stepsController");
+	
+	$scope.createHerokuDirectory = function(req, res) {
+
+		$http({
+			method : 'post',
+			url : '/createHerokuDirectory'
+		}).success(function(data) {
+			console.log("SUCCESSFULLY CREATE A HEROKU DIRECTORY");
 		});
 	};
 });

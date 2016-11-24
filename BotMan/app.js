@@ -86,13 +86,16 @@ app.get('/auth/github/callback', passport.authenticate('github', {
 });
 
 app.post('/logout', home.logout);
-
 app.post('/nodeBot', home.nodeBot);
+app.post('/createHerokuDirectory', home.createHerokuDirectory);
+
+
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));
 });
 
 cmd.get('ls', function(data) {
+	console.log("inside");
 	console.log('I am at: \n', data);
 });
 

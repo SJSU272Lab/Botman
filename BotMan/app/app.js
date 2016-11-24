@@ -28,7 +28,7 @@ var controller = Botkit.slackbot({
 });
 
 controller.spawn({
-	token : 'xoxb-102901005590-IIAvg9vCC8L7nIelYvmKNiq9'
+	token : 'xoxb-105670516771-2iSxczzZhqGUuuP0hFGbbunT'
 }).startRTM();
 
 controller
@@ -47,7 +47,7 @@ controller
 					}
 					if (reply !== '') {
 						var reply_with_attachments = {
-							'username' : 'baraka',
+							'username' : 'Nachiket',
 
 							'attachments' : [ {
 								'fallback' : 'To be useful, I need you to invite me in a channel.',
