@@ -78,6 +78,22 @@ exports.createHerokuDirectory = function(req, res) {
 	});
 };
 
+exports.viewHerokuDirectory = function(req, res) {
+	console.log("INSIDE viewHerokuDirectory");
+	var json_responses = {};
+	
+	child_process.exec('viewHerokuDirectory.bat', function(error, stdout, stderr) {
+		console.log("LISTING ALL HEROKU DIRECTORIES");
+		console.log(stdout);
+		json_responses = {
+				"statusCode" : 200,
+				"directory" : stdout
+		};
+		console.log(json_responses);
+		res.send(json_responses);
+	});
+};
+
 exports.makeHerokuDirectoryMaster = function(req, res) {
 
 	var json_responses = {};

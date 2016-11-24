@@ -1,2 +1,2 @@
 cd app
-heroku git:remote -a tranquil-stream-43211
+heroku git:remote -a undefined

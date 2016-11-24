@@ -89,6 +89,7 @@ app.post('/logout', home.logout);
 app.post('/nodeBot/2', home.nodeBot);
 app.post('/createHerokuDirectory', home.createHerokuDirectory);
 app.post('/makeHerokuDirectoryMaster', home.makeHerokuDirectoryMaster);
+app.post('/viewHerokuDirectory', home.viewHerokuDirectory);
 
 
 http.createServer(app).listen(app.get('port'), function() {

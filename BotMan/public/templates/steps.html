@@ -15,20 +15,23 @@
 					<br> Create your directory by clicking the "CREATE DIRECTORY"
 					button here
 				</h2>
-				<button name="create" ng-click="createHerokuDirectory()"
-					type="submit" class="btn btn-primary">Create Your
-					Directory</button>
+				<div class="col-sm-4">
+					<button name="create" ng-click="createHerokuDirectory()"
+						type="submit" class="btn btn-primary">Create Your
+						Directory</button>
 
-				<div class="alert alert-danger" ng-hide="directory_info">
-					<strong>You Created : </strong> {{results.directory}}}
+					<div class="alert alert-danger" ng-hide="directory_info">
+						<strong>You Created : </strong>
+						<code>{{results.directory}}}</code>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-12">
 				<h2>
 					3. Please copy the last part of your directory name above in the<br>
-					following box and<br> replace your Master Directory By
-					Clicking "Make Master" button here
+					following box and replace your Master Directory By Clicking "Make <br>
+					Master" button here
 				</h2>
 				<div class="col-sm-4">
 					<div class="form-group">
@@ -41,7 +44,8 @@
 
 					<div class="alert alert-danger" ng-hide="status_message">
 						<strong>Your Directory is now master and you changes can
-							be pushed to cloud : </strong>
+							be pushed to cloud : </strong><br>
+						<code>{{results_master.directory}}</code>
 					</div>
 				</div>
 
@@ -66,9 +70,19 @@
 			</div>
 
 			<div class="col-sm-12">
-				<h2>6. View Your Directories</h2>
-				<button name="view" ng-click="viewHerokuDirectory()" type="submit"
-					class="btn btn-primary">View Your Directory</button>
+				<h2>
+					6. View Your Directories: Use this tab to switch between<br>
+					your directories and upload your bot to that directory
+				</h2>
+				<div class="col-sm-4">
+					<button name="view" ng-click="viewHerokuDirectory()" type="submit"
+						class="btn btn-primary">View Your Directory</button>
+
+					<div class="alert alert-danger" ng-hide="view_directories">
+						<strong>Following are your Directories : </strong>
+						<code>{{results_directories.directory}}}</code>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

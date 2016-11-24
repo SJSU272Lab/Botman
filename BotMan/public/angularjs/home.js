@@ -44,6 +44,7 @@ app.controller("stepsController", function($scope, $http) {
 	console.log("INSIDE stepsController");
 	$scope.directory_info = true;
 	$scope.status_message = true;
+	$scope.view_directories = true;
 	$scope.createHerokuDirectory = function(req, res) {
 
 		$http({
@@ -56,6 +57,20 @@ app.controller("stepsController", function($scope, $http) {
 			console.log(data);
 		});
 	};
+	
+	$scope.viewHerokuDirectory = function(req, res) {
+
+		$http({
+			method : 'post',
+			url : '/viewHerokuDirectory'
+		}).success(function(data) {
+			console.log("SUCCESSFULLY LISTED ALL HEROKU DIRECTORY ASSOCIATED WITH A PARTICULAR EMAIL");
+			$scope.results_directories = data;
+			$scope.view_directories = false;
+			console.log(data);
+		});
+	};
+	
 });
 
 app.controller("masterDirectory", function ($scope, $http) {
@@ -74,7 +89,7 @@ app.controller("masterDirectory", function ($scope, $http) {
 			data : directoryName
 		}).success(function(data) {
 			console.log("SUCCESSFULLY ASSIGNED ABOVE HEROKU DIRECTORY AS MASTER");
-			$scope.results = data;
+			$scope.results_master = data;
 			$scope.status_message = false;
 			console.log(data);
 		});
