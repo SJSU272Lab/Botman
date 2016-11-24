@@ -1,37 +1,73 @@
 <div class="container" ng-controller="masterDirectory">
 	<h2>PLEASE FOLLOW THE FOLLOWING STEPS TO DEPLOY YOUR BOT TO SLACK</h2>
-	<h2>
-		1. Every First time user must create a directory to deploy the Bot <br>
-		Create your directory by clicking the "CREATE DIRECTORY" button here
-	</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>
+					1. Every First time user must create a directory to deploy the Bot
+					<br> Create your directory by clicking the "CREATE DIRECTORY"
+					button here
+				</h2>
+				<button name="create" ng-click="createHerokuDirectory()"
+					type="submit" class="btn btn-primary">Create Your
+					Directory</button>
 
-	<button name="create" ng-click="createHerokuDirectory()" type="submit"
-		class="btn btn-primary">Create Your Directory</button>
+				<div class="alert alert-danger" ng-hide="directory_info">
+					<strong>You Created : </strong> {{results.directory}}}
+				</div>
+			</div>
 
-	<div class="alert alert-danger" ng-hide="directory_info">
-		<strong>You Created : </strong> {{results.directory}}}
+			<div class="col-sm-12">
+				<h2>
+					2. Please copy the last part of your directory name above in the
+					following box and<br> replace your Master Directory By
+					Clicking "Make Master" button here
+				</h2>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<input type="text" ng-model="directory_name" name="directory_name"
+							id="directory_name" class="form-control input-sm floatlabel"
+							placeholder="directory_name">
+					</div>
+					<button name="master" ng-click="makeHerokuDirectoryMaster()"
+						type="submit" class="btn btn-primary">Make Heroku Master</button>
+
+					<div class="alert alert-danger" ng-hide="status_message">
+						<strong>Your Directory is now master and you changes can
+							be pushed to cloud : </strong>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-sm-12">
+				<h2>
+					3. Use the code editor we provided to develope your code.<br>
+					You can save workspace by clicking the
+					<code>Save Workspace</code>
+					button.
+				</h2>
+			</div>
+
+
+			<div class="col-sm-12">
+				<h2>4. Upload your files to your own heroku directory on cloud
+					and watch your slack bot in action.</h2>
+			</div>
+			
+			<div class="col-sm-12">
+				<h2>4. Upload your files to your own heroku directory on cloud
+					and watch your slack bot in action.</h2>
+			</div>
+		</div>
 	</div>
 
-	<h2>
-		2. Please copy the last part of your directory name above in the
-		following box and<br> replace your Master Directory By Clicking
-		"Make Master" button here
-	</h2>
 
-	<div class="col-xs-6 col-sm-6 col-md-6">
-		<div class="form-group">
-			<input type="text" ng-model="directory_name" name="directory_name"
-				id="directory_name" class="form-control input-sm floatlabel"
-				placeholder="directory_name">
-		</div>
-		<button name="master" ng-click="makeHerokuDirectoryMaster()"
-			type="submit" class="btn btn-primary">Make Heroku Master</button>
 
-		<div class="alert alert-danger" ng-hide="status_message">
-			<strong>Your Directory is now master and you changes can be
-				pushed to cloud : </strong>
-		</div>
-	</div>
+
+
+
 
 
 </div>
