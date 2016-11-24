@@ -54,9 +54,22 @@ exports.nodeBot = function(req, res) {
 		console.log("The app.js was saved!");
 	});
 
-	child_process.exec('test.bat', function(error, stdout, stderr) {
+	child_process.exec('createYourBot.bat', function(error, stdout, stderr) {
 		console.log('Deploying to the cloud');
 		console.log(stdout);
 	});
+
+};
+
+exports.createHerokuDirectory = function(req, res) {
+	console.log("INSIDE createHerokuDirectory");
+
+	
+	child_process.exec('createHerokuDirectory.bat', function(error, stdout, stderr) {
+		console.log("CREATING A HEROKU DIRECTORY");
+		console.log(stdout);
+	});
+	
+	res.send(200);
 
 };
