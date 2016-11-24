@@ -90,6 +90,7 @@ app.post('/nodeBot/2', home.nodeBot);
 app.post('/createHerokuDirectory', home.createHerokuDirectory);
 app.post('/makeHerokuDirectoryMaster', home.makeHerokuDirectoryMaster);
 app.post('/viewHerokuDirectory', home.viewHerokuDirectory);
+app.post('/deleteHerokuDirectory', home.deleteHerokuDirectory);
 
 
 http.createServer(app).listen(app.get('port'), function() {

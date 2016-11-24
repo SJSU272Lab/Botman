@@ -126,3 +126,35 @@ exports.makeHerokuDirectoryMaster = function(req, res) {
 		res.send(json_responses);
 	});
 };
+
+exports.deleteHerokuDirectory = function(req, res) {
+
+	var json_responses = {};
+	
+	console.log("INSIDE deleteHerokuDirectory");
+
+	var directoryName = req.param("directoryName");
+	
+	var makeBatchCommand = "heroku apps:destroy --app " + directoryName + " --confirm " + directoryName;
+	
+	console.log(makeBatchCommand);
+	
+	fs.writeFile("deleteHerokuDirectory.bat", makeBatchCommand, function(err) {
+		if (err) {
+			return console.log(err);
+		}
+		console.log("The deleteHerokuDirectory.bat was generated!");
+	});
+	
+	
+	child_process.exec('deleteHerokuDirectory.bat', function(error, stdout, stderr) {
+		console.log("DELETING YOUR SELECTED HEROKU APP");
+		console.log(stdout);
+		json_responses = {
+				"statusCode" : 200,
+				"directory" : stdout
+		};
+		console.log(json_responses);
+		res.send(json_responses);
+	});
+};

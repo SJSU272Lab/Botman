@@ -5,13 +5,13 @@
 
 			<div class="col-sm-12">
 				<h2>
-					1. Create accout on Heroku and Install Heeroku CLI Belt.<br>
+					1. Create accout on Heroku and Install Heroku CLI Belt.<br>
 					Login to Heroku CMD using your credentials
 				</h2>
 			</div>
 			<div class="col-sm-12">
 				<h2>
-					2. Every First time user must create a directory to deploy the Bot
+					2. Every First time user must create a APP to deploy the Bot
 					<br> Create your directory by clicking the "CREATE DIRECTORY"
 					button here
 				</h2>
@@ -83,6 +83,29 @@
 						<code>{{results_directories.directory}}}</code>
 					</div>
 				</div>
+			</div>
+			
+			
+			<div class="col-sm-12">
+				<h2>
+					7. Delete Your Directory
+				</h2>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<input type="text" ng-model="delete_directory_name" name="delete_directory_name"
+							id="delete_directory_name" class="form-control input-sm floatlabel"
+							placeholder="delete_directory_name">
+					</div>
+					<button name="master" ng-click="deleteHerokuDirectory()"
+						type="submit" class="btn btn-primary">DELETE HEROKU DIRECTORY</button>
+
+					<div class="alert alert-danger" ng-hide="delete_message">
+						<strong>Your Directory is deleted : </strong><br>
+						<code>{{results_deleted_master.directory}}</code>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>

@@ -45,6 +45,7 @@ app.controller("stepsController", function($scope, $http) {
 	$scope.directory_info = true;
 	$scope.status_message = true;
 	$scope.view_directories = true;
+	$scope.delete_message = true;
 	$scope.createHerokuDirectory = function(req, res) {
 
 		$http({
@@ -91,6 +92,25 @@ app.controller("masterDirectory", function ($scope, $http) {
 			console.log("SUCCESSFULLY ASSIGNED ABOVE HEROKU DIRECTORY AS MASTER");
 			$scope.results_master = data;
 			$scope.status_message = false;
+			console.log(data);
+		});
+	};
+	
+	$scope.deleteHerokuDirectory = function(req, res) {
+		$scope.delete_message = true;
+		var directoryName = {
+				"directoryName" : $scope.delete_directory_name
+			};
+		console.log(directoryName);
+		
+		$http({
+			method : 'post',
+			url : '/deleteHerokuDirectory',
+			data : directoryName
+		}).success(function(data) {
+			console.log("SUCCESSFULLY ASSIGNED ABOVE HEROKU DIRECTORY AS MASTER");
+			$scope.results_deleted_master = data;
+			$scope.delete_message = false;
 			console.log(data);
 		});
 	};

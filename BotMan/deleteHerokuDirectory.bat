@@ -1,0 +1,1 @@
+heroku apps:destroy --app ancient-sierra-28961 --confirm ancient-sierra-28961
