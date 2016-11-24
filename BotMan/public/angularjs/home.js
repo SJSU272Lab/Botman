@@ -27,7 +27,7 @@ app.controller('homecontroller', function($scope, $http) {
 		console.log($scope.code);
 		$http({
 			method : 'post',
-			url : '/nodeBot',
+			url : '/nodeBot/2',
 			data : {
 				"modules" : $scope.modules,
 				"code" : $scope.code
@@ -39,10 +39,11 @@ app.controller('homecontroller', function($scope, $http) {
 });
 
 
-app.controller('stepsController', function($scope, $http) {
+app.controller("stepsController", function($scope, $http) {
 	
 	console.log("INSIDE stepsController");
-	
+	$scope.directory_info = true;
+	$scope.status_message = true;
 	$scope.createHerokuDirectory = function(req, res) {
 
 		$http({
@@ -50,6 +51,33 @@ app.controller('stepsController', function($scope, $http) {
 			url : '/createHerokuDirectory'
 		}).success(function(data) {
 			console.log("SUCCESSFULLY CREATE A HEROKU DIRECTORY");
+			$scope.results = data;
+			$scope.directory_info = false;
+			console.log(data);
 		});
 	};
+});
+
+app.controller("masterDirectory", function ($scope, $http) {
+	console.log("INSIDE masterDirectory controller");
+	
+	$scope.makeHerokuDirectoryMaster = function(req, res) {
+		$scope.status_message = true;
+		var directoryName = {
+				"directoryName" : $scope.directory_name
+			};
+		console.log(directoryName);
+		
+		$http({
+			method : 'post',
+			url : '/makeHerokuDirectoryMaster',
+			data : directoryName
+		}).success(function(data) {
+			console.log("SUCCESSFULLY ASSIGNED ABOVE HEROKU DIRECTORY AS MASTER");
+			$scope.results = data;
+			$scope.status_message = false;
+			console.log(data);
+		});
+	};
+	
 });
