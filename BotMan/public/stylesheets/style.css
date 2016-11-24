@@ -6,3 +6,29 @@ body {
 a {
   color: #00B7FF;
 }
+
+#botcode{
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	box-sizing: box-type;
+	padding: 5px;
+	background-color: white;
+	width: 100%;
+	font-family: courier;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+
+.botpackagejson {
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	box-sizing: box-type;
+	padding: 5px;
+	background-color: white;
+	width: 100%;
+	font-family: courier;
+	min-height: 200px;
+	max-height: 400px;
+	overflow-y: scroll;
+}
