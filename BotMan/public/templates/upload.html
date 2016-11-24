@@ -2,19 +2,17 @@
 	<h1>UPLOAD YOUR FILES HERE</h1>
 	<h2>package.json</h2>
 	<form>
-		<div>
-			<textarea class="botpackagejson" ng-model="modules"></textarea>
+		<div class="form-group">
+			<textarea class="form-control" rows="15" ng-model="modules"></textarea>
 		</div>
 
 		<h2>app.js</h2>
 
-		<div id="demo">
-			<label id="botcode" ng-model="module"></label>
-			<br/>
+		<div id="demo" class="form-group">
+			<textarea class="form-control"
+				rows="60" ng-model="code"></textarea>
+			<br>
 			<button class="btn btn-primary" ng-click="upload()">Upload</button>
 		</div>
 	</form>
 </div>
-<script>
-   document.getElementById('botcode').innerHTML = localStorage.getItem('editorVal').replace(/\n|\r\n|\r/g, '<br/>');
-</script>

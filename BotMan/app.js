@@ -86,8 +86,9 @@ app.get('/auth/github/callback', passport.authenticate('github', {
 });
 
 app.post('/logout', home.logout);
-app.post('/nodeBot', home.nodeBot);
+app.post('/nodeBot/2', home.nodeBot);
 app.post('/createHerokuDirectory', home.createHerokuDirectory);
+app.post('/makeHerokuDirectoryMaster', home.makeHerokuDirectoryMaster);
 
 
 http.createServer(app).listen(app.get('port'), function() {

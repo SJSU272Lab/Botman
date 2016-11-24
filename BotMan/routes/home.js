@@ -31,6 +31,7 @@ exports.logout = function(req, res) {
 
 exports.nodeBot = function(req, res) {
 	console.log("inside nodeBot");
+	console.log(req.url);
 
 	var modules = req.param("modules");
 	console.log("Required Modules:");
@@ -63,13 +64,49 @@ exports.nodeBot = function(req, res) {
 
 exports.createHerokuDirectory = function(req, res) {
 	console.log("INSIDE createHerokuDirectory");
-
+	var json_responses = {};
 	
 	child_process.exec('createHerokuDirectory.bat', function(error, stdout, stderr) {
 		console.log("CREATING A HEROKU DIRECTORY");
 		console.log(stdout);
+		json_responses = {
+				"statusCode" : 200,
+				"directory" : stdout
+		};
+		console.log(json_responses);
+		res.send(json_responses);
+	});
+};
+
+exports.makeHerokuDirectoryMaster = function(req, res) {
+
+	var json_responses = {};
+	
+	console.log("INSIDE makeHerokuDirectoryMaster");
+
+	var directoryName = req.param("directoryName");
+	
+	var makeBatchCommand = "cd app\n";
+		makeBatchCommand += "heroku git:remote -a " + directoryName;
+	
+	console.log(makeBatchCommand);
+	
+	fs.writeFile("makeHerokuDirectoryMaster.bat", makeBatchCommand, function(err) {
+		if (err) {
+			return console.log(err);
+		}
+		console.log("The makeHerokuDirectoryMaster.bat was generated!");
 	});
 	
-	res.send(200);
-
+	
+	child_process.exec('makeHerokuDirectoryMaster.bat', function(error, stdout, stderr) {
+		console.log("ASSIGNING INPUTED HEROKU DIRECTORY AS MASTER");
+		console.log(stdout);
+		json_responses = {
+				"statusCode" : 200,
+				"directory" : stdout
+		};
+		console.log(json_responses);
+		res.send(json_responses);
+	});
 };
