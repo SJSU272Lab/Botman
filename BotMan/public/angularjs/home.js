@@ -55,7 +55,8 @@ app.controller("stepsController", function($scope, $http) {
 			console.log("SUCCESSFULLY CREATE A HEROKU DIRECTORY");
 			$scope.results = data;
 			$scope.directory_info = false;
-			console.log(data);
+			$scope.directory_name_new = data.directory.substring(data.directory.lastIndexOf("/")+1,data.directory.lastIndexOf("."));
+			console.log(data.directory.substring(data.directory.lastIndexOf("/")+1,data.directory.lastIndexOf(".")));
 		});
 	};
 	
@@ -68,10 +69,10 @@ app.controller("stepsController", function($scope, $http) {
 			console.log("SUCCESSFULLY LISTED ALL HEROKU DIRECTORY ASSOCIATED WITH A PARTICULAR EMAIL");
 			$scope.results_directories = data;
 			$scope.view_directories = false;
-			console.log(data);
+			$scope.directory_list = (data.directory.substring(data.directory.lastIndexOf("Apps")+5).trim()).replace(/[^a-zA-Z0-9-]/g, "..........");
+			console.log((data.directory.substring(data.directory.lastIndexOf("Apps")+5).trim()).replace(/[^a-zA-Z0-9-]/g, '<br/>'));
 		});
 	};
-	
 });
 
 app.controller("masterDirectory", function ($scope, $http) {
