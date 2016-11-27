@@ -1,23 +1,25 @@
 <div class="container" ng-controller="masterDirectory">
-	<h2>PLEASE FOLLOW THE FOLLOWING STEPS TO DEPLOY YOUR BOT TO SLACK</h2>
+	<br/>
+	<br/>
+	<br/>
+	<h1>PLEASE FOLLOW THE BELOW STEPS TO DEPLOY YOUR BOT TO SLACK</h1>
 	<div class="container">
 		<div class="row">
 
 			<div class="col-sm-12">
 				<h2>
-					1. Create accout on Heroku and Install Heroku CLI Belt.<br>
-					Login to Heroku CMD using your credentials
+					1. Create accout on Heroku and Install Heroku CLI Belt.	Login to Heroku CMD using your credentials
 				</h2>
 			</div>
 			<div class="col-sm-12">
 				<h2>
-					2. Every First time user must create a APP to deploy the Bot
-					<br> Create your directory by clicking the "CREATE DIRECTORY"
+					2. Every First time user must create a APP to deploy the Bot. 
+					Create your directory by clicking the "CREATE DIRECTORY"
 					button here
 				</h2>
 				<div class="col-sm-4">
 					<button name="create" ng-click="createHerokuDirectory()"
-						type="submit" class="btn btn-primary">Create Your
+						type="submit" class="btn btn-primary steps-button">Create Your
 						Directory</button>
 
 					<div class="alert alert-danger" ng-hide="directory_info">
@@ -29,8 +31,8 @@
 
 			<div class="col-sm-12">
 				<h2>
-					3. Please copy the last part of your directory name above in the<br>
-					following box and replace your Master Directory By Clicking "Make <br>
+					3. Please copy the last part of your directory name above in the
+					following box and replace your Master Directory By Clicking "Make 
 					Master" button here
 				</h2>
 				<div class="col-sm-4">
@@ -40,7 +42,7 @@
 							placeholder="directory_name">
 					</div>
 					<button name="master" ng-click="makeHerokuDirectoryMaster()"
-						type="submit" class="btn btn-primary">Make Heroku Master</button>
+						type="submit" class="btn btn-primary steps-button">Make Heroku Master</button>
 
 					<div class="alert alert-danger" ng-hide="status_message">
 						<strong>Your Directory is now master and you changes can
@@ -54,7 +56,7 @@
 
 			<div class="col-sm-12">
 				<h2>
-					4. Use the code editor we provided to develope your code.<br>
+					4. Use the code editor we provided to develope your code.
 					You can save workspace by clicking the
 					<code>Save Workspace</code>
 					button.
@@ -64,19 +66,19 @@
 
 			<div class="col-sm-12">
 				<h2>
-					5. Upload your files to your own heroku directory on cloud<br>
+					5. Upload your files to your own heroku directory on cloud 
 					and watch your slack bot in action.
 				</h2>
 			</div>
 
 			<div class="col-sm-12">
 				<h2>
-					6. View Your Directories: Use this tab to switch between<br>
+					6. View Your Directories: Use this tab to switch between 
 					your directories and upload your bot to that directory
 				</h2>
 				<div class="col-sm-4">
 					<button name="view" ng-click="viewHerokuDirectory()" type="submit"
-						class="btn btn-primary">View Your Directory</button>
+						class="btn btn-primary steps-button">View Your Directory</button>
 
 					<div class="alert alert-danger" ng-hide="view_directories">
 						<strong>Following are your Directories : </strong>
@@ -97,24 +99,17 @@
 							placeholder="delete_directory_name">
 					</div>
 					<button name="master" ng-click="deleteHerokuDirectory()"
-						type="submit" class="btn btn-primary">DELETE HEROKU DIRECTORY</button>
+						type="submit" class="btn btn-primary steps-button">Delete Heroku Directory</button>
 
 					<div class="alert alert-danger" ng-hide="delete_message">
 						<strong>Your Directory is deleted : </strong><br>
 						<code>{{results_deleted_master.directory}}</code>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
+		<br/>
+		<br/>
+		<br/>
 	</div>
-
-
-
-
-
-
-
-
 </div>

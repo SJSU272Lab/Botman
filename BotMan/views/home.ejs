@@ -82,14 +82,15 @@
 			</div>
 
 			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" style="width:100%;">
+				    <li><img src="/assets/images/bot_logo2.png" class="logo" /></li>
 					<li><a href="#steps">STEPS</a></li>
 					<li><a href="#/home">EDITOR</a></li>
 					<li><a href="#/upload">UPLOAD FILES</a></li>
-					<li>
+					<li style="float:right;">
 						<form action="logout" method="post">
 							<button name="logout" onclick="clearEditor()" ng-click="logout()" type="submit"
-								class="btn btn-primary">LOGOUT</button>
+								class="btn btn-primary" style="margin-top: 7px;right: 0px;">LOGOUT</button>
 						</form>
 					</li>
 				</ul>

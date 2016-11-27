@@ -7,6 +7,28 @@ a {
   color: #00B7FF;
 }
 
+h1 {
+	color: black;
+	font-family: 'Lato', sans-serif;
+	font-size: 54px;
+	font-weight: 300;
+	line-height: 58px;
+	margin: 0 0 58px;
+}
+
+.body-area{
+   background: -o-linear-gradient(#EFEFFB, white); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#EFEFFB, white); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#EFEFFB, white); /* Standard syntax */
+   height:100%;	
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
 #botcode{
 	border: 1px solid #BDBDBD;
 	border-radius: 5px;
@@ -31,4 +53,8 @@ a {
 	min-height: 200px;
 	max-height: 400px;
 	overflow-y: scroll;
+}
+
+.steps-button {
+	width:180px;
 }
