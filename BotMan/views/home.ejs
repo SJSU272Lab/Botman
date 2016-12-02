@@ -84,7 +84,7 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav" style="width:100%;">
 				    <li><img src="/assets/images/bot_logo2.png" class="logo" /></li>
-					<li><a href="#steps">STEPS</a></li>
+					<li><a href="#steps" id="steps">STEPS</a></li>
 					<li><a href="#/home">EDITOR</a></li>
 					<li><a href="#/upload">UPLOAD FILES</a></li>
 					<li style="float:right;">
@@ -98,5 +98,8 @@
 		</div>
 	</nav>
 	<div ng-view></div>
+	<script type="text/javascript">
+		document.getElementById('steps').click();
+	</script>
 </body>
 </html>
