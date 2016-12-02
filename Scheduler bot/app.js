@@ -19,16 +19,6 @@ app.listen(port, function() {
 	console.log('Listening on port ' + port);
 });
 
-/*var schedule = function()
-{
-	console.log("Monday : meetings");
-	console.log("tueday : nothing");
-	console.log("wednesday : holiday");
-	console.log("thursday : developement");
-	console.log("friday : testing");
-	
-}*/
-
 var schedule = "";
 var numberIcons="";
 var controller = Botkit.slackbot({
