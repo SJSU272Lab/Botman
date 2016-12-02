@@ -1,3 +1,56 @@
+<style type="text/css">
+  #spinner-container{
+      position: absolute;;
+      box-sizing: border-box;
+      width: 550px;
+      height: 300px;
+      margin-top: 200px;
+      left: 30%;
+      visibility: hidden;
+      background-color: gray;
+      box-shadow: 2px 2px 5px #888888;
+      border-radius: 5px;
+      z-index: 2;
+  }
+  #spinner{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left:auto;
+    margin-right: auto;
+    top: 25%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    background-color: gray;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  #spinner-text{
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    top: 35%;
+    color: white;
+    text-align: center;
+  }
+   @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+</style>
+<div id="spinner-container">
+		<div id="spinner"></div>
+		<h2 id="spinner-text">UPLOADING</h2>
+</div>
 <div class="container">
 	<h1>UPLOAD YOUR FILES HERE</h1>
 	<h2>package.json</h2>
@@ -9,10 +62,18 @@
 		<h2>app.js</h2>
 
 		<div id="demo" class="form-group">
-			<textarea class="form-control"
-				rows="15" ng-model="code"></textarea>
+			<textarea class="form-control" rows="15" ng-model="code"></textarea>
 			<br>
-			<button class="btn btn-primary" ng-click="upload()">Upload</button>
+			<button class="btn btn-primary" onclick="getLoader()" ng-click="upload()">Upload</button>
 		</div>
 	</form>
 </div>
+<script>
+        var getLo = document.getElementById('spinner-container');
+        function getLoader() {
+          getLo.style.visibility = "visible";
+          setTimeout(function(){
+            getLo.style.visibility = "hidden";
+          },10000);
+        }
+</script>
