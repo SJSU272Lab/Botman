@@ -16,8 +16,8 @@ var session = require('express-session');
 
 var passport = require('passport');
 var GitHubStrategy = require('passport-github2').Strategy;
-var GITHUB_CLIENT_ID = "e36ec6505140b3b2d3b3";
-var GITHUB_CLIENT_SECRET = "f6615b499be6fb8d1dc04150b112a0c7fdd6016c";
+var GITHUB_CLIENT_ID = "c5265ca4b8cf14b6f38f";
+var GITHUB_CLIENT_SECRET = "54d3afa60f952850381fe03fd38c8bdf1b0e5daf";
 
 passport.serializeUser(function(user, done) {
 	done(null, user);
@@ -30,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
 	clientID : GITHUB_CLIENT_ID,
 	clientSecret : GITHUB_CLIENT_SECRET,
-	callbackURL : "http://botman.ml/auth/github/callback"
+	callbackURL : "http://54.67.97.98:443/auth/github/callback"
 }, function(accessToken, refreshToken, profile, done) {
 	// asynchronous verification, for effect...
 	process.nextTick(function() {
