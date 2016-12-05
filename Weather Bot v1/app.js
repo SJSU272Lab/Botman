@@ -31,7 +31,7 @@ var controller = Botkit.slackbot({
 });
 
 controller.spawn({
-	token : 'xoxb-112482091298-xZDd7Q1SJTIyezwfdoRLoiG2'
+	token : 'xoxb-113199943431-4a6xdNWtbAChDSbs7apqrx2u'
 }).startRTM();
 
 controller.hears('.*',[ 'direct_message', 'direct_mention', 'mention' ],
@@ -42,6 +42,7 @@ controller.hears('.*',[ 'direct_message', 'direct_mention', 'mention' ],
 		var temp_min;
 		var temp_max;
 		var humidity;
+		console.log(message.match[0]);
 		if(message.match[0].toUpperCase().indexOf('WEATHER')>-1) {
 			weather.setCity(message.match[0].substr('Weather'.length).trim());
 			weather.getAllWeather(function(err, JSONObj){
@@ -52,8 +53,9 @@ controller.hears('.*',[ 'direct_message', 'direct_mention', 'mention' ],
 				temp_min = ':low_brightness:   Minimum temperature: '+(((JSONObj.main.temp_min*9)/5)+32)+'F :small_red_triangle_down: \r';
 				temp_max = ':high_brightness:  Maximum temperature: '+(((JSONObj.main.temp_max*9)/5)+32)+'F :small_red_triangle:\r';
 				humidity = ':sweat_drops: Humidity           : '+JSONObj.main.humidity+'%';
+				
 				var reply_with_attachments = {
-					'username' : 'Sunny',
+					'username' : 'weatherbot',
 					'text' : city,
 					'attachments' : [ {
 								'fallback' : 'To be useful, I need you to invite me in a channel.',
@@ -65,5 +67,26 @@ controller.hears('.*',[ 'direct_message', 'direct_mention', 'mention' ],
 				};
 				bot.reply(message, reply_with_attachments);
 			});
+	}
+	
+	else if(message.match[0].toUpperCase().indexOf('HELP')>-1)
+	{
+		var reply_with_attachments = {
+					'username' : 'weatherbot',
+					'text' : "Syntax is : weather <city name>",
+					'mrkdwn': true,
+					'icon_url' : 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJBPdSX9-5_Zb9lv9zFYqnQWICB4aGn3M9R9koRM-4uoKZYQq'
+				};
+		bot.reply(message, reply_with_attachments);
+	}
+	else 
+	{
+		var reply_with_attachments = {
+					'username' : 'weatherbot',
+					'text' : "Sorry, I didn't understand that :(",
+					'mrkdwn': true,
+					'icon_url' : 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJBPdSX9-5_Zb9lv9zFYqnQWICB4aGn3M9R9koRM-4uoKZYQq'
+				};
+		bot.reply(message, reply_with_attachments);
 	}
 });
