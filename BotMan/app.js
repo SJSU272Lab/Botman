@@ -16,8 +16,8 @@ var session = require('express-session');
 
 var passport = require('passport');
 var GitHubStrategy = require('passport-github2').Strategy;
-var GITHUB_CLIENT_ID = "4b6982470783a2811dcd";
-var GITHUB_CLIENT_SECRET = "b3d9d2cb7fbfa0168b7a871b9238f8a10d95be0f";
+var GITHUB_CLIENT_ID = "e36ec6505140b3b2d3b3";
+var GITHUB_CLIENT_SECRET = "f6615b499be6fb8d1dc04150b112a0c7fdd6016c";
 
 passport.serializeUser(function(user, done) {
 	done(null, user);
@@ -30,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
 	clientID : GITHUB_CLIENT_ID,
 	clientSecret : GITHUB_CLIENT_SECRET,
-	callbackURL : "http://127.0.0.1:3000/auth/github/callback"
+	callbackURL : "http://54.153.80.225:443/auth/github/callback"
 }, function(accessToken, refreshToken, profile, done) {
 	// asynchronous verification, for effect...
 	process.nextTick(function() {
@@ -45,7 +45,7 @@ passport.use(new GitHubStrategy({
 }));
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 443);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
