@@ -1,0 +1,12 @@
+Create a framework to help users create Bots for Slack integration. 
+Bot helps slack ( www.slack.com (Links to an external site.) ) users integrate their processes, 
+tools and mundane tasks using bots. Your framework will be a hosted services which will allow the following:
+
+a) host their bots (use s3/swift)
+
+b) help them program the bots easily 
+
+c) deploy to production easily
+
+talk to me if any questions...
+

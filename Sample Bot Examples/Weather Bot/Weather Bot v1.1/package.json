@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.x.x",
+    "botkit": "^0.4.1",
+    "express": "^4.x.x",
+    "openweather-apis": "^3.0.2",
+    "request": "2.56.x"
+  }
+}
