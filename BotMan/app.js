@@ -30,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
 	clientID : GITHUB_CLIENT_ID,
 	clientSecret : GITHUB_CLIENT_SECRET,
-	callbackURL : "http://52.53.160.225/auth/github/callback"
+	callbackURL : "http://127.0.0.1:3000/auth/github/callback"
 }, function(accessToken, refreshToken, profile, done) {
 	// asynchronous verification, for effect...
 	process.nextTick(function() {
@@ -45,7 +45,7 @@ passport.use(new GitHubStrategy({
 }));
 
 // all environments
-app.set('port', process.env.PORT || 443);
+app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
