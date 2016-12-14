@@ -39,3 +39,23 @@ This is a custom framework which will help many people who are new or are unawar
 As an office work group manager on slack I will need to maintain list of the things that need to be bought for the meeting. So the group of the office can easily maintain the things to be bought with the help of our bot. While discussing on the channel he thinks of something to be bought then instead of writing down in a separate notepad and then saving it somewhere. He can just save the list in the bot which he himself will create through our BotMan. This will reduce the overhead of maintaining mundane tasks for me.
 
 In a project team while discussing the things sometimes someone uses words which are unknown to the others, in that case a project team can have a slack bot created through BotMan which will search those words in a dictionary and return the results to the team member. This way the communication between the team members will be efficient and productive.
+
+##USER GUIDE
+######STEPS TO MAKE BOTMAN WORKING-
+-	Download or Fork the Repository
+- Install all the dependencies using npm install command
+- Run app.js using node cmd
+- Open localhost at port 3000 in your browser
+- Application will be start
+
+######STEPS TO CREATE YOUR FIRST BOT
+- Login into the application using github.
+- You can find **_STEPS_** tab where all the instructions are given
+- First you need to create a new heroku directory
+- Next step is make that directory master using the button provided in the steps page
+- Open editor type in your code for the bot
+- Go to the **Upload** tab and upload your app.js and package.json files and the bot will be live within seconds on your slack channel
+
+##FUTURE ENHANCEMENTS
+- Currently we support NodeJS bots
+- We are going to provide support for other languages like python soon 
