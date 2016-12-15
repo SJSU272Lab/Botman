@@ -4,13 +4,13 @@
 
 ##ABSTRACT
 
-•	Introduction: Develop  a framework to help users create Bots for Slack integration
+•	Introduction: Develop a framework to help users create Bots for Slack integration.
 
 In this project, we will be building a custom framework, which will help users build their own custom bots and deploy in production. Slack Bots are useful to perform important mundane tasks that a team can find useful.
 
 A Bot User is something that has similar properties like a human slack account except password and login. Instead of interacting through a slack desktop or mobile app, their behavior is controlled by programs that we write.
 
-Bot users can be Custom, meaning they can be designed specifically for your team on slack or they can be attached to Slack App. Attaching a bot user to a Slack App makes you able to distribute your app to other teams using slack.
+Bot users can be custom, meaning they can be designed specifically for your team on slack or they can be attached to Slack App. Attaching a bot user to a Slack App makes you able to distribute your app to other teams using slack.
 
 The main way in which a bot can interact with people is through Real Time Messaging API. The Idea of our project is to iteratively ask questions so that we can build a bot on behalf of the user through our framework.
 
@@ -23,11 +23,15 @@ The website will iteratively ask questions that we will use in the program and c
 
 •	Technology Stack
 
-We are thinking of using Python, node.JS, JavaScript, Slack API, Botkit, Git
+We are using Python, node.JS, JavaScript, Slack API, Botkit, Git, Angular.JS, HTML and CSS.
 
 •	Need and Advantages
 
 This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use slack and make a bot.
+
+##Videos
+#####• Introductory Video : https://www.youtube.com/watch?v=pPiQfsfU4ow
+#####• Demo and Directions Video : https://www.youtube.com/watch?v=HM9CImS1Lug
 
 ##ARCHITECTURAL FLOW DIAGRAM
 
@@ -43,13 +47,13 @@ In a project team while discussing the things sometimes someone uses words which
 ##USER GUIDE
 ######STEPS TO MAKE BOTMAN WORKING-
 -	Download or Fork the Repository
-- Install all the dependencies using npm install command
+- Install all the dependencies using 'npm install' command
 - Run app.js using node cmd
 - Open localhost at port 3000 in your browser
-- Application will be start
+- Application will be started
 
 ######STEPS TO CREATE YOUR FIRST BOT
-- Login into the application using github.
+- Login into the application using github
 - You can find **_STEPS_** tab where all the instructions are given
 - First you need to create a new heroku directory
 - Next step is make that directory master using the button provided in the steps page
@@ -58,4 +62,4 @@ In a project team while discussing the things sometimes someone uses words which
 
 ##FUTURE ENHANCEMENTS
 - Currently we support NodeJS bots
-- We are going to provide support for other languages like python soon 
+- We are going to provide support for other languages like Python soon 
