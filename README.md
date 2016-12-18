@@ -6,7 +6,7 @@
 ##Introduction
 
 ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.
-
+<br>
 ##URL:
 http://54.153.11.25:443/
 
@@ -14,6 +14,11 @@ http://54.153.11.25:443/
 
 In the design, we are thinking of devising a simple website, which we will host as a service that will guide a user through steps in designing his own slack bot.
 The website will iteratively ask questions that we will use in the program and create the bot.
+
+## Project Deliverables
+
+[Presentation Slides] (Documents/Project Presentation/Presentation.pdf) <br/>
+[Project Report] (Documents/Project Report/ProjectReport.pdf)
 
 #####• Introductory Video
 <a href="https://www.youtube.com/watch?v=Vt0EBIN8PVo"><img src="http://i3.ytimg.com/vi/Vt0EBIN8PVo/hqdefault.jpg" 
