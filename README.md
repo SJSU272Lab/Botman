@@ -1,11 +1,11 @@
 #PROJECT NAME: _BotMan_
-<img src="https://github.com/SJSU272Lab/Botman/blob/master/Documents/Project%20Logo/logo.JPG" width="28%" align="left">
+<img src="https://github.com/SJSU272Lab/Botman/blob/master/Documents/Project%20Logo/logo.JPG" width="23%" height="23%" align="left">
 
 
 
 ##Introduction
 
-ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.
+ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.<br/>
 ####SLACK
 Slack is a cloud bases team collaboration tool. Almost every programming team nowadays uses two tools one is git and the other is slack
 
@@ -83,7 +83,7 @@ Enthusiastic members are welcome to fork and open issues in this git directory.
 ## Team Members
 
 
-| [![Nachiket Joshi](https://avatars.githubusercontent.com/TheBloodMage?s=100)<br /><sub>Nachiket Joshi</sub>](https://github.com/TheBloodMage)<br /> | [![Abhishek Madan](https://avatars.githubusercontent.com/AbhishekMadan?s=100)<br /><sub>Abhishek Madan</sub>](https://github.com/AbhishekMadan)<br /> 
-| [![Saurabh Gedam](https://avatars.githubusercontent.com/saurabhgedam?s=100)<br /><sub>Saurabh Gedam</sub>](https://github.com/saurabhgedam)<br />
-| [![Sagar Mane](https://avatars.githubusercontent.com/Sagar-Mane?s=100)<br /><sub>Sagar Mane</sub>](https://github.com/Sagar-Mane)<br/>
-| :---: | :---: | :---: | :---: |
+![Nachiket Joshi](https://avatars.githubusercontent.com/TheBloodMage?s=100) |  ![Abhishek Madan](https://avatars.githubusercontent.com/AbhishekMadan?s=100) |![Saurabh Gedam](https://avatars.githubusercontent.com/saurabhgedam?s=100)  |  ![Sagar Mane](https://avatars.githubusercontent.com/Sagar-Mane?s=100)
+:--------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:
+[Nachiket Joshi](https://github.com/TheBloodMage) | [Abhishek Madan](https://github.com/AbhishekMadan) | [Saurabh Gedam](https://github.com/saurabhgedam)|[Sagar Mane](https://github.com/Sagar-Mane)
+
