@@ -1,6 +1,8 @@
 ![capture](https://cloud.githubusercontent.com/assets/15001254/19718999/d3c39948-9b1c-11e6-9241-b902892ee48e.JPG)
 
 #PROJECT NAME: _BotMan_
+##URL:
+http://54.153.11.25:443/
 
 ##ABSTRACT
 
@@ -45,7 +47,7 @@ As an office work group manager on slack I will need to maintain list of the thi
 In a project team while discussing the things sometimes someone uses words which are unknown to the others, in that case a project team can have a slack bot created through BotMan which will search those words in a dictionary and return the results to the team member. This way the communication between the team members will be efficient and productive.
 
 ##USER GUIDE
-######STEPS TO MAKE BOTMAN WORKING-
+######STEPS TO GET BOTMAN WORKING ON LOCALHOST-
 -	Download or Fork the Repository
 - Install all the dependencies using 'npm install' command
 - Run app.js using node cmd
