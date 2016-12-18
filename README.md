@@ -1,33 +1,31 @@
-![capture](https://cloud.githubusercontent.com/assets/15001254/19718999/d3c39948-9b1c-11e6-9241-b902892ee48e.JPG)
-
 #PROJECT NAME: _BotMan_
+<img src="https://github.com/SJSU272Lab/Botman/blob/master/Documents/Project%20Logo/logo.JPG" width="28%" align="left">
+
 ##URL:
 http://54.153.11.25:443/
 
-##ABSTRACT
+##Introduction
 
-•	Introduction: Develop a framework to help users create Bots for Slack integration.
+ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.
 
-In this project, we will be building a custom framework, which will help users build their own custom bots and deploy in production. Slack Bots are useful to perform important mundane tasks that a team can find useful.
-
-A Bot User is something that has similar properties like a human slack account except password and login. Instead of interacting through a slack desktop or mobile app, their behavior is controlled by programs that we write.
-
-Bot users can be custom, meaning they can be designed specifically for your team on slack or they can be attached to Slack App. Attaching a bot user to a Slack App makes you able to distribute your app to other teams using slack.
-
-The main way in which a bot can interact with people is through Real Time Messaging API. The Idea of our project is to iteratively ask questions so that we can build a bot on behalf of the user through our framework.
-
-We will initially try to develop bots working as command line interpreters. Basically, we will be storing user entered information such as commands that he would like his bot to know then devise some way in which we can bundle these commands so that the bot knows its meaning and perform some relative bundled actions.
-
-•	System Design: Describe your chosen design
+## Project Deliverables
 
 In the design, we are thinking of devising a simple website, which we will host as a service that will guide a user through steps in designing his own slack bot.
 The website will iteratively ask questions that we will use in the program and create the bot.
 
-•	Technology Stack
+<a href="https://www.youtube.com/watch?v=Vt0EBIN8PVo"><img src="http://i3.ytimg.com/vi/Vt0EBIN8PVo/hqdefault.jpg" 
+alt="Introductory Video" width="240" height="180" border="10" /></a>
+
+<a href="https://www.youtube.com/watch?v=HM9CImS1Lug"><img src="http://i3.ytimg.com/vi/HM9CImS1Lug/hqdefault.jpg" 
+alt="Demo and Directions Video" width="240" height="180" border="10" /></a>
+
+
+
+##	Technology Stack
 
 We are using Python, node.JS, JavaScript, Slack API, Botkit, Git, Angular.JS, HTML and CSS.
 
-•	Need and Advantages
+##	Need and Advantages
 
 This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use slack and make a bot.
 
@@ -42,9 +40,7 @@ This is a custom framework which will help many people who are new or are unawar
 
 ##USER STORIES
 
-As an office work group manager on slack I will need to maintain list of the things that need to be bought for the meeting. So the group of the office can easily maintain the things to be bought with the help of our bot. While discussing on the channel he thinks of something to be bought then instead of writing down in a separate notepad and then saving it somewhere. He can just save the list in the bot which he himself will create through our BotMan. This will reduce the overhead of maintaining mundane tasks for me.
-
-In a project team while discussing the things sometimes someone uses words which are unknown to the others, in that case a project team can have a slack bot created through BotMan which will search those words in a dictionary and return the results to the team member. This way the communication between the team members will be efficient and productive.
+An office work group manager has to maintain list of the things that need to be bought for the meeting. This can be done by adding an inventory management bot to the slack channel. This bot could act as a manager and record the requests for stationary products. While discussing on the channel, if any employee thinks of something to be bought then instead of writing down in a separate notepad and then saving it somewhere, he can just request it over the channel and the bot could record them. This will reduce the overhead of physically recording things or creating a portal where the employee has to raise a request for the same.
 
 ##USER GUIDE
 ######STEPS TO GET BOTMAN WORKING ON LOCALHOST-
@@ -65,3 +61,11 @@ In a project team while discussing the things sometimes someone uses words which
 ##FUTURE ENHANCEMENTS
 - Currently we support NodeJS bots
 - We are going to provide support for other languages like Python soon 
+
+## Team Members
+
+
+| [![Nachiket Joshi](https://avatars.githubusercontent.com/TheBloodMage?s=100)<br /><sub>Nachiket Joshi</sub>](https://github.com/TheBloodMage)<br /> | [![Abhishek Madan](https://avatars.githubusercontent.com/AbhishekMadan?s=100)<br /><sub>Abhishek Madan</sub>](https://github.com/AbhishekMadan)<br /> 
+| [![Saurabh Gedam](https://avatars.githubusercontent.com/saurabhgedam?s=100)<br /><sub>Saurabh Gedam</sub>](https://github.com/saurabhgedam)<br />
+| [![Sagar Mane](https://avatars.githubusercontent.com/Sagar-Mane?s=100)<br /><sub>Sagar Mane</sub>](https://github.com/Sagar-Mane)<br />|
+| :---: | :---: | :---: | :---: |
