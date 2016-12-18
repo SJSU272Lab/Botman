@@ -6,6 +6,12 @@
 ##Introduction
 
 ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.
+####SLACK
+Slack is a cloud bases team collaboration tool. Almost every programming team nowadays uses two tools one is git and the other is slack
+
+####HEROKU
+Heroku is a cloud Platform-as-a-Service (PaaS) app. This supports several programming languages that are used as a web application deployment model.
+
 <br>
 ##URL:
 http://54.153.11.25:443/
@@ -14,8 +20,6 @@ http://54.153.11.25:443/
 
 In the design, we are thinking of devising a simple website, which we will host as a service that will guide a user through steps in designing his own slack bot.
 The website will iteratively ask questions that we will use in the program and create the bot.
-
-## Project Deliverables
 
 [Presentation Slides] (Documents/Project Presentation/Presentation.pdf) <br/>
 [Project Report] (Documents/Project Report/ProjectReport.pdf)
@@ -64,8 +68,17 @@ An office work group manager has to maintain list of the things that need to be 
 - Go to the **Upload** tab and upload your app.js and package.json files and the bot will be live within seconds on your slack channel
 
 ##FUTURE ENHANCEMENTS
-- Currently we support NodeJS bots
-- We are going to provide support for other languages like Python soon 
+The project could easily be developed further based on the aspects, which could be listed as follows<br>
+-      Support for programming languages other than Node js-
+While there is a large community of programmers working on JavaScript related frameworks, we cannot overlook other potential programming platforms. Slack allows developing and deploying bots programmed in languages other than Node, like python and swift. It provides packages which could be easily integrated with these languages in addition to the Node packages. In the future releases of the framework, a good modification to the framework would be to provide support for these additional programming languages as well. This would help us to popularize the framework among a larger pool of slack-bot enthusiasts.<br>
+-      Record of the bots created by a particular user date wise -
+The framework can be modified with an additional provision of storing the code base of the bots developed by a particular user. When a person logs out from the application, the code base for the Bot is lost. In the next version of the framework, we can provide the user with a cloud-based storage repository option where he could save his work. This would enable him to refer to his past work and also maintain it from time to time.<br>
+-      Giving additional controls on the user dashboard-
+The current cloud repository controls available to a user are limited to creating, updating and deleting the remote repositories. The dashboard does not provide any control to the user for managing the life cycle of the Bot. Once a bot is made live, the user cannot deactivate the bot locally from the application.  A good upgrade to the framework design would be to provide these controls so that the application can become a one-stop solution for developing the bot and managing its life cycle as well.
+
+##CONCLUSION
+While bots have long lived in the quieter corners of the Internet, apps like Slack (and WhatsApp, Kik, WeChat and Tinder) are pushing them into the mainstream. A framework like BotMan would give an impetus to the growth and would find its foothold in the market, assisting people to create customized bots for their personal and commercial use.
+Enthusiastic members are welcome to fork and open issues in this git directory.
 
 ## Team Members
 
