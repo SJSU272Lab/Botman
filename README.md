@@ -80,6 +80,10 @@ The current cloud repository controls available to a user are limited to creatin
 While bots have long lived in the quieter corners of the Internet, apps like Slack (and WhatsApp, Kik, WeChat and Tinder) are pushing them into the mainstream. A framework like BotMan would give an impetus to the growth and would find its foothold in the market, assisting people to create customized bots for their personal and commercial use.
 Enthusiastic members are welcome to fork and open issues in this git directory.
 
+##CONTACT US AT
+- EMAIL : botman.framework@gmail.com
+
+
 ## Team Members
 
 
