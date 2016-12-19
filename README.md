@@ -5,7 +5,7 @@
 
 ##Introduction
 
-ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.<br/>
+ChatBots are on the rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.<br/>
 ####SLACK
 Slack is a cloud based team collaboration tool. Almost every programming team nowadays uses two tools, one is git and the other is Slack.
 
@@ -39,7 +39,7 @@ We are using Python, node.JS, JavaScript, Slack API, Botkit, Git, Angular.JS, HT
 
 ##	Need and Advantages
 
-This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use slack and make a bot.
+This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use Slack and make a bot.
 
 ##ARCHITECTURAL FLOW DIAGRAM
 
