@@ -7,10 +7,10 @@
 
 ChatBots are on a rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.<br/>
 ####SLACK
-Slack is a cloud bases team collaboration tool. Almost every programming team nowadays uses two tools one is git and the other is slack
+Slack is a cloud based team collaboration tool. Almost every programming team nowadays uses two tools, one is git and the other is Slack.
 
 ####HEROKU
-Heroku is a cloud Platform-as-a-Service (PaaS) app. This supports several programming languages that are used as a web application deployment model.
+Heroku is a cloud Platform-as-a-Service (PaaS) app. It supports several programming languages that are used as a web application deployment model.
 
 <br>
 ##URL:
