@@ -1,19 +1,19 @@
-#<a href="http://54.153.11.25:443/" style="text_decoration:none;">BotMan</a>
+# <a href="http://54.153.11.25:443/" style="text_decoration:none;">BotMan</a>
 <img src="https://github.com/SJSU272Lab/Botman/blob/master/Documents/Project%20Logo/logo.JPG" width="23%" height="23%" align="left">
 
 
 
-##Introduction
+## Introduction
 
 ChatBots are on the rise. These are automated computer programs, which respond to user queries by employing a suitable ML algorithm to gauge what the user is asking and reply appropriately. Bots have appeal and huge fan following not only among the developer community, but also among the non-developer tech community. People can now exploit the easy integration of their bots with the chat platforms like, Facebook, Slack or Tinder to automate certain tasks, thereby saving time or increasing productivity.<br/>
-####SLACK
+#### SLACK
 Slack is a cloud based team collaboration tool. Almost every programming team nowadays uses two tools, one is git and the other is Slack.
 
-####HEROKU
+#### HEROKU
 Heroku is a cloud Platform-as-a-Service (PaaS) app. It supports several programming languages that are used as a web application deployment model.
 
 <br>
-##URL:
+## URL:
 http://54.153.11.25:443/
 
 ## Project Deliverables
@@ -24,11 +24,11 @@ The website will iteratively ask questions that we will use in the program and c
 [Presentation Slides] (Documents/Project Presentation/Presentation.pdf) <br/>
 [Project Report] (Documents/Project Report/ProjectReport.pdf)
 
-#####• Introductory Video
+##### • Introductory Video
 <a href="https://www.youtube.com/watch?v=Vt0EBIN8PVo"><img src="http://i3.ytimg.com/vi/Vt0EBIN8PVo/hqdefault.jpg" 
 alt="Introductory Video" width="240" height="180" border="10" /></a>
 
-#####• Demo and Directions Video 
+##### • Demo and Directions Video 
 
 <a href="https://www.youtube.com/watch?v=HM9CImS1Lug"><img src="http://i3.ytimg.com/vi/HM9CImS1Lug/hqdefault.jpg" 
 alt="Demo and Directions Video" width="240" height="180" border="10" /></a>
@@ -41,17 +41,17 @@ We are using Python, node.JS, JavaScript, Slack API, Botkit, Git, Angular.JS, HT
 
 This is a custom framework which will help many people who are new or are unaware of programming concepts but want to use Slack and make a bot.
 
-##ARCHITECTURAL FLOW DIAGRAM
+## ARCHITECTURAL FLOW DIAGRAM
 
 ![arch](https://cloud.githubusercontent.com/assets/15001254/21296495/f335371c-c521-11e6-9d63-a4221c57c268.png)
 
 
-##USER STORIES
+## USER STORIES
 
 An office work group manager has to maintain list of the things that need to be bought for the meeting. This can be done by adding an inventory management bot to the slack channel. This bot could act as a manager and record the requests for stationary products. While discussing on the channel, if any employee thinks of something to be bought then instead of writing down in a separate notepad and then saving it somewhere, he can just request it over the channel and the bot could record them. This will reduce the overhead of physically recording things or creating a portal where the employee has to raise a request for the same.
 
-##USER GUIDE
-######STEPS TO GET BOTMAN WORKING ON LOCALHOST-
+## USER GUIDE
+###### STEPS TO GET BOTMAN WORKING ON LOCALHOST-
 -	Download or Fork the Repository
 - Install all the dependencies using 'npm install' command
 - Run app.js using node cmd
@@ -59,7 +59,7 @@ An office work group manager has to maintain list of the things that need to be 
 - Application will be started
 - Visit our hosted website
 
-######STEPS TO CREATE YOUR FIRST BOT
+###### STEPS TO CREATE YOUR FIRST BOT
 - Login into the application using github
 - You can find **_STEPS_** tab where all the instructions are given
 - First you need to create a new heroku directory
@@ -67,7 +67,7 @@ An office work group manager has to maintain list of the things that need to be 
 - Open editor type in your code for the bot
 - Go to the **Upload** tab and upload your app.js and package.json files and the bot will be live within seconds on your slack channel
 
-##FUTURE ENHANCEMENTS
+## FUTURE ENHANCEMENTS
 The project could easily be developed further based on the aspects, which could be listed as follows<br>
 -      Support for programming languages other than Node js-
 While there is a large community of programmers working on JavaScript related frameworks, we cannot overlook other potential programming platforms. Slack allows developing and deploying bots programmed in languages other than Node, like python and swift. It provides packages which could be easily integrated with these languages in addition to the Node packages. In the future releases of the framework, a good modification to the framework would be to provide support for these additional programming languages as well. This would help us to popularize the framework among a larger pool of slack-bot enthusiasts.<br>
@@ -76,11 +76,11 @@ The framework can be modified with an additional provision of storing the code b
 -      Giving additional controls on the user dashboard-
 The current cloud repository controls available to a user are limited to creating, updating and deleting the remote repositories. The dashboard does not provide any control to the user for managing the life cycle of the Bot. Once a bot is made live, the user cannot deactivate the bot locally from the application.  A good upgrade to the framework design would be to provide these controls so that the application can become a one-stop solution for developing the bot and managing its life cycle as well.
 
-##CONCLUSION
+## CONCLUSION
 While bots have long lived in the quieter corners of the Internet, apps like Slack (and WhatsApp, Kik, WeChat and Tinder) are pushing them into the mainstream. A framework like BotMan would give an impetus to the growth and would find its foothold in the market, assisting people to create customized bots for their personal and commercial use.
 Enthusiastic members are welcome to fork and open issues in this git directory.
 
-##CONTACT US AT
+## CONTACT US AT
 - EMAIL : botman.framework@gmail.com
 
 
